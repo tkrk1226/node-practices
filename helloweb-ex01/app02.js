@@ -5,7 +5,6 @@ const http = require("http");
 const port = 9010;
 const fs = require("fs");
 
-
 const server = http.createServer(function(req, resp){
     //console.log("request received");
     

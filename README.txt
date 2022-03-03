@@ -42,19 +42,18 @@ Node Practices
         - 원격 배포
         - 로컬 배포
 
-6. npmjs.com(npm registry)에 내 패키지 배포 (생략, https://github.com/kickscar/javascript-practices/tree/main/TechNotes/javascript-practices/11.Development%20Environments 참고)
+6. npmjs.com의 npm registry에 내 패키지 배포하기 (생략, https://github.com/kickscar/javascript-practices/tree/main/TechNotes/javascript-practices/11.Development%20Environments 참고)
+(과제 개념으로 해보는 것 추천!!!)
 
+7. helloweb-ex01 (pure node.js) : 웹애플리케이션 만들어보기
+    1) app01: http: core module 기반
+    2) app02: http, fs: core module 기반
+    3) app03: connect, serve-static: npm package 기반
+    4) app04: connect, serve-static: connect-route: npm package 기반
 
+8. helloweb-ex02 (express) : 웹애플리케이션 만들어보기
 
-
-
-7. helloweb-ex01 (pure node.js)
-
-
-
-
-
-8. helloweb-ex02 (express)
+9. node로 backEnd 만들기 -> 생략이나 해보는 것 매우 중요
 
 
 

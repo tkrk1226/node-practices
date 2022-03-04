@@ -1,6 +1,5 @@
 Node Practices
 
-
 1. 패키지 (package)
     - 완전한 applcation(node daemon, babel, webpack)
     - 프로젝트에서 사용하는 모듈 (라이브러리)
@@ -28,12 +27,11 @@ Node Practices
         - $[project-ex01] npm un ejs (local install 삭제)
         - $[project-ex01] npm un -g gulp (global install 삭제)
 
-4. Nod0e(JavaScript) Project(BE/FE Application, Package) 생성 방법
+4. Node(JavaScript) Project(BE/FE Application, Package) 생성 방법
     1) 프로젝트 생성 (mkdir)
     2) 프로젝트 이동 (cd)
     3) 프로젝트 초기화 : 프로젝트 페니페스트 파일(package.json) 생성
         - $[project-ex02] npm init
-
 
 5. Module
     1) 코어 모듈 (fs, os, ... node에서 제공해주는 모듈)

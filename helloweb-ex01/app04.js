@@ -3,7 +3,6 @@ const serveStatic = require("serve-static");
 const connectRoute = require("connect-route");
 
 const port = 9010;
-const fs = require("serve-static");
 const app = connect(); // 함수를 바로 export 시킨다.
 
 app.use(connectRoute(function(router){

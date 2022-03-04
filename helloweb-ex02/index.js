@@ -4,6 +4,8 @@ const http = require("http");
 const path = require("path");
 const express = require("express");
 
+const mainRouter = require('./routes/main');
+const userRouter = require('./routes/user');
 const helloRouter = require('./routes/hello');
 
 const port = 9010;
@@ -16,6 +18,8 @@ const application = express()
     .use(express.urlencoded({extended: true})) // application/x-www-form-urlencoded
     .use(express.json())     // application/json
     // 3. view engine
+    .set('views', path.join(__dirname, "views"))
+    .set('view engine', 'ejs')
     // 4. request router
     .all('*', function(req, res, next){
         res.locals.req = req;
@@ -23,6 +27,8 @@ const application = express()
 
         next(); // 이걸 써야 다음 라우팅이 가능, chain이 계속 가능하다.
     })
+    .use('/', mainRouter)
+    .use('/user', userRouter)
     .use('/hello', helloRouter);
 
 // Server Setup
